@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
         Push.setListener(new MyPushListener());
         Distribute.setListener(new MyDistributeListener());
-        MobileCenter.setLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
+        //MobileCenter.setLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
 
-        MobileCenter.start(getApplication(), "6cfc0ef6-3735-4bf9-9b77-9385bc7bb616",
+        MobileCenter.start(getApplication(), "6a00e122-d020-4d5c-b6d3-8a2eb7227954",
                 Analytics.class, Crashes.class, Distribute.class, Push.class);
         Log.e("installID", "" + MobileCenter.getInstallId().get());
 //        MobileCenter.start(this, "b4be3d4e-e63f-40e6-a04a-459894f938ab",
